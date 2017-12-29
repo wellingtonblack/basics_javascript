@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<title>Formulários</title>
+		<meta charset="utf-8" />
+	</head>
+
+	<body>
+
+		<h1>Formulários</h1>
+		<form>
+			Login:<br />
+			<input type="text" name="login" /><br />
+			Senha:<br / >
+			<input type="password" name="senha" /><br /><br />
+
+			<input type="submit" value="Login" />
+		</form>
+
+		<h1>Cadastre-se</h1>
+		<form>
+
+			Login:<br />
+			<input type="text" /><br />
+
+			Sexo:<br />
+			<input type="radio" name="sexo" />Masculino<br />
+			<input type="radio" name="sexo" />Feminino<br />
+
+			Interesses:<br />
+			<input type="checkbox"> Futebol<br />
+			<input type="checkbox"> Cursos<br />
+			<input type="checkbox"> Eletrôncio<br />
+
+			Estado:<br />
+			<select>
+				<option>SP</option>
+				<option>MG</option>
+				<option>RJ</option>
+				<option>RS</option>
+			</select>
+			<br />
+
+			Observações:<br />
+			<textarea></textarea>
+			<br />
+
+			<input type="submit" value="Cadastrar" />
+
+		</form>
+		<i data-placement="bottom" data-trigger="click"
+		bs-popover="'views/partials/notifications.html'" data-html="true" 
+		data-unique="1" 
+		data-original-title="teste popover" 
+		title="teste popove"
+	 />
+
+
+	</body>
+	<script src="https://gist.github.com/danmillar/1930277.js"></script>
+	<script type="text/javascript">
+		// dirty hack
+		$.fn.popover.Constructor.prototype.fixTitle = function () {};
+	</script>
+
+</html>
+
+<table>
+	<tr>
+		<td>(80) 99997788</td>
+	</tr>
+	<tr>
+		<td>(80) 99994433</td>
+	</tr>
+	<tr>
+		<td>(80) 99995566</td>
+	</tr>
+</table>
